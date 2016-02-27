@@ -1,0 +1,11 @@
+<div class="col-md-12">
+    <div class="todolist">
+        <h1>Already Done</h1>
+        <ul id="done-items" class="list-unstyled">
+            <li *ngFor="#todo of todos" [class.done]="todo.done">{{todo.text}}
+                <button class="remove-item btn btn-default btn-xs pull-right" (click)="remove(todo)"><span class="glyphicon glyphicon-remove"></span></button>
+            </li>
+
+        </ul>
+    </div>
+</div>
